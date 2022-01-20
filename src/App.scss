@@ -1,39 +1,47 @@
 .landing-page-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 50%);
     margin-top: 48px;
     margin-left: 250px;
     width: calc(100%-270px);
 }
 .landing-page-content .box {
     display: grid;
-    place-items: center;
     margin: 0;
     width: auto;
     height: 710px;
 }
+.landing-page-content .box h1 {
+    text-align: end;
+    margin-right: 40%;
+    height: 50px;
+    background-color: #ffffff50;
+}
+.box a{
+    text-decoration: none;
+    color: whitesmoke;
+}
 .box:first-child{
-    background-image: url("../assets/people.jpg");
+    background-image: url("../assets/ibm-close.jpg");
     background-size: cover;
     background-position: center;
-    color: white;
     font-weight: bold;
+    color: whitesmoke;
 }
-.box:nth-child(2){
-    background-image: url("../assets/ibm.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.box:last-child{
-    background-image: url("../assets/power.jpg");
+
+.box:first-child:hover{
+    transition-duration: 1s;
+    background-image: url("../assets/ibm-open.jpg");
     background-size: cover;
-    color: white;
+    background-position: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #808080ad;
 }
-.box:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+.box:last-child{
+    background-image: url("../assets/ibm-lgbt.jpg");
+    background-size: cover;
+    color: whitesmoke;
 }

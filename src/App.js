@@ -7,8 +7,6 @@ import {
   SideNavMenuItem,
   SideNavItems,
   SideNavLink,
-  Accordion,
-  AccordionItem
 } from 'carbon-components-react';
 
 function App() {
@@ -33,9 +31,9 @@ function App() {
             <SideNavMenuItem href="javascript:void(0)">Aportes de Ingenieria</SideNavMenuItem>
           </SideNavMenu>
 
-          <SideNavMenu title="Sistemas Golden" isActive={true}>
+          <SideNavMenu title="Sistemas Golden">
             <SideNavMenuItem href="/puto">Denali/FleetWood</SideNavMenuItem>
-            <SideNavMenuItem aria-current="page" href="javascript:void(0)">Tuleta/ZZ/Zeppellin</SideNavMenuItem>
+            <SideNavMenuItem href="javascript:void(0)">Tuleta/ZZ/Zeppellin</SideNavMenuItem>
             <SideNavMenuItem href="javascript:void(0)">Partes Golden</SideNavMenuItem>
           </SideNavMenu>
 
@@ -59,17 +57,11 @@ function App() {
       <div className='landing-page-content'>
       
       <div className='box'>
-        <h1>People</h1>
-        <h1>Choice</h1>
-        <h1>Awards</h1>
-      </div>
-
-      <div className='box'>
-        <h1>Announces</h1>
-      </div>
-
-      <div className='box'>
         <h1>Power Systems</h1>
+      </div>
+
+      <div className='box'>
+        <h1>Life at IBM</h1>
       </div>
 
       </div>
