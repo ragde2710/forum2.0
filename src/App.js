@@ -1,13 +1,16 @@
+import React from 'react';
 import './App.scss';
-import { 
-  Header, 
-  HeaderName,
-  SideNav,
-  SideNavMenu,
-  SideNavMenuItem,
-  SideNavItems,
-  SideNavLink,
-} from 'carbon-components-react';
+import { Header, HeaderName, SideNav, SideNavMenu, SideNavMenuItem, SideNavItems, SideNavLink, Form } from 'carbon-components-react';
+import { Routes, Route, Outlet, Link } from "react-router-dom"
+
+<Routes>
+  <Route path="/"></Route>
+  <Route path="fallasComunes/glosarioSRCs"></Route>
+  <Route path="fallasComunes/workArounds"></Route>
+  <Route path="fallasComunes/AportesIngenieria"></Route>
+</Routes>
+
+
 
 function App() {
   return (
@@ -26,8 +29,12 @@ function App() {
         <SideNavItems>
 
           <SideNavMenu title="Fallas Comunes">
-            <SideNavMenuItem href="javascript:void(0)">Glosario SRC'S</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">WorkAround's</SideNavMenuItem>
+            <SideNavMenuItem href="javascript:void(0)">
+              <Link to="fallasComunes/glosarioSRCs">Glosario SRC'S</Link>
+            </SideNavMenuItem>
+            <SideNavMenuItem href="javascript:void(0)">
+              <Link to="fallasComunes/workArounds">WorkAround's</Link>
+            </SideNavMenuItem>
             <SideNavMenuItem href="javascript:void(0)">Aportes de Ingenieria</SideNavMenuItem>
           </SideNavMenu>
 
