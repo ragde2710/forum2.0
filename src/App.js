@@ -1,27 +1,19 @@
 import React from 'react';
 import './App.scss';
 import { Header, HeaderName, SideNav, SideNavMenu, SideNavMenuItem, SideNavItems, SideNavLink, Form } from 'carbon-components-react';
-import { Routes, Route, Outlet, Link } from "react-router-dom"
-
-<Routes>
-  <Route path="/"></Route>
-  <Route path="fallasComunes/glosarioSRCs"></Route>
-  <Route path="fallasComunes/workArounds"></Route>
-  <Route path="fallasComunes/AportesIngenieria"></Route>
-</Routes>
-
-
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom"
+import SrcLibrary from './pages/src-library';
+import EngInst from './pages/enginst'
+import WorkArounds from './pages/workarounds'
 
 function App() {
   return (
     <div className='app'>
-
       <Header aria-label="IBM Platform Name">
         <HeaderName href="#" prefix="IBM">
           [Power Forum]
         </HeaderName>
       </Header>
-
       <SideNav      
         isFixedNav expanded={true}
       isChildOfHeader={false}
@@ -30,10 +22,10 @@ function App() {
 
           <SideNavMenu title="Fallas Comunes">
             <SideNavMenuItem href="javascript:void(0)">
-              <Link to="fallasComunes/glosarioSRCs">Glosario SRC'S</Link>
+              <Link to="/SRCs">Glosario SRC'S</Link>
             </SideNavMenuItem>
             <SideNavMenuItem href="javascript:void(0)">
-              <Link to="fallasComunes/workArounds">WorkAround's</Link>
+              <Link to="/WorkArounds">WorkAround's</Link>
             </SideNavMenuItem>
             <SideNavMenuItem href="javascript:void(0)">Aportes de Ingenieria</SideNavMenuItem>
           </SideNavMenu>
