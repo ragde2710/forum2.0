@@ -8,6 +8,7 @@ import { Routes, Route, Outlet, Link } from "react-router-dom"
   <Route path="fallasComunes/glosarioSRCs"></Route>
   <Route path="fallasComunes/workArounds"></Route>
   <Route path="fallasComunes/AportesIngenieria"></Route>
+  <Route path="sistemasGolden/Denali"></Route>
 </Routes>
 
 
@@ -35,11 +36,13 @@ function App() {
             <SideNavMenuItem href="javascript:void(0)">
               <Link to="fallasComunes/workArounds">WorkAround's</Link>
             </SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Aportes de Ingenieria</SideNavMenuItem>
+            <SideNavMenuItem href="javascript:void(0)">
+            <Link to="fallasComunes/aportesDeIngenieria">Aportes de Ingenieria</Link>
+            </SideNavMenuItem>
           </SideNavMenu>
 
           <SideNavMenu title="Sistemas Golden">
-            <SideNavMenuItem href="/puto">Denali/FleetWood</SideNavMenuItem>
+            <SideNavMenuItem href="/">Denali/FleetWood</SideNavMenuItem>
             <SideNavMenuItem href="javascript:void(0)">Tuleta/ZZ/Zeppellin</SideNavMenuItem>
             <SideNavMenuItem href="javascript:void(0)">Partes Golden</SideNavMenuItem>
           </SideNavMenu>
