@@ -1,0 +1,11 @@
+.App {
+    margin: 48px 10% 0 10%;
+}
+.wabox-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+}
+.wa-box .bx--accordion__item {
+    margin: 0;
+    background-color: white;
+}

@@ -27,7 +27,9 @@ function App() {
             <SideNavMenuItem href="javascript:void(0)">
               <Link to="/WorkArounds">WorkAround's</Link>
             </SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Aportes de Ingenieria</SideNavMenuItem>
+            <SideNavMenuItem href="javascript:void(0)">
+              <Link to="/EngInst">Aportes de Ingenieria</Link>
+            </SideNavMenuItem>
           </SideNavMenu>
 
           <SideNavMenu title="Sistemas Golden">
