@@ -1,5 +1,12 @@
+.bx--accordion {
+    margin-top: 65px;
+    margin-left: 7%;
+}
+.bx--accordion__heading{
+    width: 93.5%;
+}
 .bx--accordion__item {
-    margin: 0 10% 0 10%;
+    margin: 0 1% 0 10%;
     background-color: white;
 }
 .bx--accordion__title{
@@ -7,7 +14,7 @@
     text-align: start;
 }
 .bx--accordion__content {
-    width: 125%;
+    width: 115%;
 }
 .bx--accordion__content p{
     font-size: 1.1rem;

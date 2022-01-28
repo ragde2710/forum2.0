@@ -1,69 +1,47 @@
 import React from 'react';
 import './App.scss';
-import { Header, HeaderName, SideNav, SideNavMenu, SideNavMenuItem, SideNavItems, SideNavLink, Form } from 'carbon-components-react';
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom"
-import SrcLibrary from './pages/src-library';
-import EngInst from './pages/enginst'
-import WorkArounds from './pages/workarounds'
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className='app'>
-      <Header aria-label="IBM Platform Name">
-        <HeaderName href="#" prefix="IBM">
-          [Power Forum]
-        </HeaderName>
-      </Header>
-      <SideNav      
-        isFixedNav expanded={true}
-      isChildOfHeader={false}
-      aria-label="Side navigation">
-        <SideNavItems>
-
-          <SideNavMenu title="Fallas Comunes">
-            <SideNavMenuItem href="javascript:void(0)">
-              <Link to="/SRCs">Glosario SRC'S</Link>
-            </SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">
-              <Link to="/WorkArounds">WorkAround's</Link>
-            </SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">
-              <Link to="/EngInst">Aportes de Ingenieria</Link>
-            </SideNavMenuItem>
-          </SideNavMenu>
-
-          <SideNavMenu title="Sistemas Golden">
-            <SideNavMenuItem href="/puto">Denali/FleetWood</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Tuleta/ZZ/Zeppellin</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Partes Golden</SideNavMenuItem>
-          </SideNavMenu>
-
-          <SideNavMenu title="Manuals">
-            <SideNavMenuItem href="javascript:void(0)">ZZ2/ZZ4/ZZ Tower</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Open Power</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Fleetwood/Denali/Brazo</SideNavMenuItem>
-          </SideNavMenu>
-
-          <SideNavLink href="javascript:void(0)">
-              Avisos
-          </SideNavLink>
-
-          <SideNavLink href="javascript:void(0)">
-              PCM'S
-          </SideNavLink>
-
-        </SideNavItems>
-      </SideNav>
-
       <div className='landing-page-content'>
-      
-      <div className='box'>
-        <h1>Power Systems</h1>
-      </div>
 
-      <div className='box'>
-        <h1>Life at IBM</h1>
-      </div>
+          <div className='box'>
+            <Link to="/checklist">
+              <h1>Checklist</h1>
+            </Link>
+          </div>
+
+          <div className='box'>
+            <a href='http://powertest.gdl.mex.ibm.com/users/login/?next=/'>
+              <h1>Part Tracking System</h1>
+            </a>
+          </div>
+
+        <div className='box'>
+          <Link to="/forum">
+            <h1>Power Forum</h1>
+          </Link>
+        </div>
+
+        <div className='box'>
+          <a href='https://certification-tool.dal1a.cirrus.ibm.com/#/login'>
+            <h1>Certification Tool</h1>
+          </a>
+        </div>
+
+        <div className='box'>
+          <a href='http://smweb.gdl.mex.ibm.com:9080/Smart_Web/login.jsp?id=3621&error=fail&redirect=SMDashboards.jsp'>
+            <h1>Smart Web</h1>
+            </a>
+        </div>
+
+        <div className='box'>
+          <Link to="/golden">
+            <h1>Golden Systems</h1>
+          </Link>
+        </div>
 
       </div>
     </div>
@@ -71,3 +49,4 @@ function App() {
 }
 
 export default App;
+

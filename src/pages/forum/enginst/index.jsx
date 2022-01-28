@@ -1,13 +1,15 @@
 import './index.scss';
 import  { Accordion, AccordionItem } from 'carbon-components-react';
 import React from 'react';
+import SideNavBar from '../../../components/SideNav/sidenav';
 
 const EngInst = () => {
     return (
-        <div className="App">
+        <div className="enginst-main">
+            <SideNavBar/>
             <Accordion>
                 <AccordionItem 
-                title="Fallas OMI (cualquiera de estos SRCs o firmas)">
+                title="Validación para Modulos NCM">
                   <p>Se han detectado procesadores en NCM que en realidad no arreglaron la 
                   falla cuando los reemplazaron, les pedimos que por favor antes de enviar 
                   cualquier componente a NCM validen si el reemplazo arreglo la falla para 

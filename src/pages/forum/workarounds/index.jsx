@@ -3,11 +3,12 @@ import './index.scss';
 import {
         Accordion,
         AccordionItem} from "carbon-components-react";
+import SideNavBar from "../../../components/SideNav/sidenav";
 
 const WorkArounds = () => {
     return (
         <div className="App">
-
+            <SideNavBar/>
             <div className="wabox-container">
 
                 <Accordion>

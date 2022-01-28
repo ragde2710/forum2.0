@@ -1,2 +1,14 @@
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/colors/scss/colors';
+
+
+.bx--header {
+    height: 65px;
+}
+.bx--header a {
+    font-size: 20px;
+}
+
+.box h1 {
+    height: 100%;
+}

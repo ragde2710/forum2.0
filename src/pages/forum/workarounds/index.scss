@@ -1,8 +1,9 @@
 .App {
-    margin: 48px 10% 0 10%;
+    margin: 48px 0 0 5%;
 }
 .wabox-container{
     display: grid;
+    margin-left: 10%;
     grid-template-columns: repeat(auto-fill, 50%);
 }
 .wa-box .bx--accordion__item {

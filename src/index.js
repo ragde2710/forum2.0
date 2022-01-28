@@ -5,16 +5,17 @@ import App from './App';
 import { Header, HeaderName } from 'carbon-components-react';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SrcLibrary from './pages/src-library';
-import EngInst from './pages/enginst';
-import WorkArounds from './pages/workarounds'
+import Forum from './pages/forum/forum';
+import SrcLibrary from './pages/forum/src-library';
+import EngInst from './pages/forum/enginst';
+import WorkArounds from './pages/forum/workarounds'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Header aria-label="IBM Platform Name">
         <HeaderName href="/" prefix="IBM">
-          [Power Forum]
+          [Power System App's]
         </HeaderName>
       </Header>
         <Routes>
@@ -22,6 +23,7 @@ ReactDOM.render(
           <Route path="/SRCs" element={<SrcLibrary/>}/>
           <Route path="/WorkArounds" element={<WorkArounds/>}/>
           <Route path="/EngInst" element={<EngInst/>}/>
+          <Route path="/forum" element={<Forum/>}/>
         </Routes>
       </BrowserRouter>,
   </React.StrictMode>,
