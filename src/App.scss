@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+    color: black;
+}
 .landing-page-content {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -45,3 +49,4 @@
     background-size: cover;
     color: whitesmoke;
 }
+

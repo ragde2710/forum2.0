@@ -1,82 +1,49 @@
-import React from 'react';
+
+import { Component } from "react";
+import { Routes, Route } from "react-router-dom";
+import HeaderM from './components/header/header';
+import SideNavM from './components/sideNav/sideNav';
+import EngInst from "./pages/enginst/enginst";
+import Home from "./pages/home/home";
+import WorkArounds from "./pages/workArounds/workArounds";
 import './App.scss';
-import { Header, HeaderName, SideNav, SideNavMenu, SideNavMenuItem, SideNavItems, SideNavLink, Form } from 'carbon-components-react';
-import { Routes, Route, Outlet, Link } from "react-router-dom"
 
-<Routes>
-  <Route path="/"></Route>
-  <Route path="fallasComunes/glosarioSRCs"></Route>
-  <Route path="fallasComunes/workArounds"></Route>
-  <Route path="fallasComunes/AportesIngenieria"></Route>
-  <Route path="sistemasGolden/Denali"></Route>
-</Routes>
-
-
-
-function App() {
-  return (
+class App extends Component {
+  
+  constructor()
+  {
+    super();
+    this.state = {
+      route: "home" 
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  render()  {
+    return (
     <div className='app'>
-
-      <Header aria-label="IBM Platform Name">
-        <HeaderName href="#" prefix="IBM">
-          [Power Forum]
-        </HeaderName>
-      </Header>
-
-      <SideNav      
-        isFixedNav expanded={true}
-      isChildOfHeader={false}
-      aria-label="Side navigation">
-        <SideNavItems>
-
-          <SideNavMenu title="Fallas Comunes">
-            <SideNavMenuItem href="javascript:void(0)">
-              <Link to="fallasComunes/glosarioSRCs">Glosario SRC'S</Link>
-            </SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">
-              <Link to="fallasComunes/workArounds">WorkAround's</Link>
-            </SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">
-            <Link to="fallasComunes/aportesDeIngenieria">Aportes de Ingenieria</Link>
-            </SideNavMenuItem>
-          </SideNavMenu>
-
-          <SideNavMenu title="Sistemas Golden">
-            <SideNavMenuItem href="/">Denali/FleetWood</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Tuleta/ZZ/Zeppellin</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Partes Golden</SideNavMenuItem>
-          </SideNavMenu>
-
-          <SideNavMenu title="Manuals">
-            <SideNavMenuItem href="javascript:void(0)">ZZ2/ZZ4/ZZ Tower</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Open Power</SideNavMenuItem>
-            <SideNavMenuItem href="javascript:void(0)">Fleetwood/Denali/Brazo</SideNavMenuItem>
-          </SideNavMenu>
-
-          <SideNavLink href="javascript:void(0)">
-              Avisos
-          </SideNavLink>
-
-          <SideNavLink href="javascript:void(0)">
-              PCM'S
-          </SideNavLink>
-
-        </SideNavItems>
-      </SideNav>
-
-      <div className='landing-page-content'>
+      <HeaderM/>
+      <SideNavM/>
+      <div className="component_render">
       
-      <div className='box'>
-        <h1>Power Systems</h1>
+        <Routes>
+          {this.state.route === "home"}
+          ?<Route index path="/home" element={<Home/>} ></Route>
+          :<Route path="fallasComunes/glosarioSRCs" element={ <EngInst/> }></Route>
+            <Route path="fallasComunes/workArounds" element= { <WorkArounds/>}></Route>
+            <Route path="fallasComunes/AportesIngenieria"></Route>
+            <Route path="sistemasGolden/Denali"></Route>
+        </Routes>
+      
       </div>
-
-      <div className='box'>
-        <h1>Life at IBM</h1>
-      </div>
-
-      </div>
-    </div>
-  );
+    </div>      
+    )
+  }
 }
 
 export default App;
