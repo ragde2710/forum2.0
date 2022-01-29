@@ -9,6 +9,7 @@ import Forum from './pages/forum/forum';
 import SrcLibrary from './pages/forum/src-library';
 import EngInst from './pages/forum/enginst';
 import WorkArounds from './pages/forum/workarounds'
+import Checklist from './pages/checklist/index'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,10 +21,11 @@ ReactDOM.render(
       </Header>
         <Routes>
           <Route path="/" element={<App />}/>
-          <Route path="/SRCs" element={<SrcLibrary/>}/>
-          <Route path="/WorkArounds" element={<WorkArounds/>}/>
-          <Route path="/EngInst" element={<EngInst/>}/>
+          <Route path="/srcs" element={<SrcLibrary/>}/>
+          <Route path="/workarounds" element={<WorkArounds/>}/>
+          <Route path="/enginst" element={<EngInst/>}/>
           <Route path="/forum" element={<Forum/>}/>
+          <Route path='/checklist' element={<Checklist/>}/>
         </Routes>
       </BrowserRouter>,
   </React.StrictMode>,
