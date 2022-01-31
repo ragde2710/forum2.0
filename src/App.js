@@ -30,11 +30,11 @@ function App() {
           <div className='box'>
             <a href='http://powertest.gdl.mex.ibm.com/users/login/?next=/'>
             <div className='box-title'>
-              <h1>Part Tracking System</h1>
+              <h1>PTS</h1>
             </div>
             <div className='box-content'>
               <div className='context'>
-                <p>Web tool for require parts.</p>
+                <p>Part tracking system.</p>
               </div>  
               <div className='icon-container'>
                 <ArrowRight32 className='box-content--icon'/>

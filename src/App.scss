@@ -13,12 +13,16 @@ a {
 .landing-page-content .box {
     width: 100%;
     height: 100%;
+    border-top: 1px solid black;
 }
 .landing-page-content .box:nth-child(1){
     grid-area: 2/2/5/6;
 }
 .landing-page-content .box:nth-child(2){
     grid-area: 2/7/5/11;
+}
+.landing-page-content .box:nth-child(2) .box-title{
+
 }
 .landing-page-content .box:nth-child(3){
     grid-area: 2/12/5/16;
@@ -41,6 +45,7 @@ a {
     margin-top: 1%;
     text-align: start;
     padding: 10px;
+    font-size: 3rem;
 }
 .landing-page-content .box-content {
     display: grid;

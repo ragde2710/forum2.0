@@ -80,10 +80,10 @@ function ZZ4U() {
                   <SelectItem width="150px" text="ZZ 2U" value="ZZ2U" />
                   <SelectItem width="150px" text="ZZ 4U" value="ZZ4U" />
                   <SelectItem width="150px" text="Fleetwood" value="Fleetwood" />
-                  <SelectItem width="150px" text="Zeppelin" value="Zeppelin" />
+                  <SelectItem width="150px" text="Zeppelin" value="Zeppellin" />
                   <SelectItem width="150px" text="MACK" value="MACK" />
-                  <SelectItem width="150px" text="wsp-aire" value="wsp-aire" />
-                  <SelectItem width="150px" text="wsp-agua" value="wsp-agua" />
+                  <SelectItem width="150px" text="wsp-aire" value="WSP (AirCooled)" />
+                  <SelectItem width="150px" text="wsp-agua" value="WSP (WaterCooled)" />
                   <SelectItem width="150px" text="Mihawk" value="Mihawk" />
                 </SelectItemGroup>
             </Select>

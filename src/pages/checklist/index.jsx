@@ -7,7 +7,7 @@ function Checklist() {
     <div className="checklist__main">
       <SelectSystem/>
     </div>
-  );
+  ); 
 }
 
 export default Checklist;
