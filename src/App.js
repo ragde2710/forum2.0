@@ -16,8 +16,8 @@ function App() {
             <div className='box-content'>
               <div className='context'>
                 <p>
-                  Forum where you will found information about
-                  srcs and more documentation to help for debugging.
+                  Web Tool for check correct FAB replacement
+                  and validate quality specs.
                 </p>
               </div>
               <div className='icon-container'>
@@ -79,7 +79,7 @@ function App() {
         </div>
 
         <div className='box'>
-          <a href='http://smweb.gdl.mex.ibm.com:9080/Smart_Web/login.jsp?id=3621&error=fail&redirect=SMDashboards.jsp'>
+         <a href='http://smweb.gdl.mex.ibm.com:9080/Smart_Web/login.jsp?id=3621&error=fail&redirect=SMDashboards.jsp'>
             <div className='box-title'>
               <h1>Smart Web</h1>
             </div>

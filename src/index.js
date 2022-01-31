@@ -16,7 +16,7 @@ ReactDOM.render(
     <BrowserRouter>
     <Header aria-label="IBM Platform Name">
         <HeaderName href="/" prefix="IBM">
-          [Power System App's]
+          [Power System Apps]
         </HeaderName>
       </Header>
         <Routes>

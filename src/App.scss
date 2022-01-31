@@ -4,24 +4,39 @@ a {
 }
 .landing-page-content {
     display: grid;
-    place-content: center;
-    grid-template-columns: repeat(3, 28%);
-    grid-template-rows: repeat(2, 300px);
-    margin: 100px 0 0 0;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(9, 11%);
     width: 100%;
-    gap: 30px;
+    height: 90vh;
+    margin-top: 5vh;
 }
-
 .landing-page-content .box {
     width: 100%;
     height: 100%;
-    border-top: 1px solid #00000034;
 }
+.landing-page-content .box:nth-child(1){
+    grid-area: 2/2/5/6;
+}
+.landing-page-content .box:nth-child(2){
+    grid-area: 2/7/5/11;
+}
+.landing-page-content .box:nth-child(3){
+    grid-area: 2/12/5/16;
+}
+.landing-page-content .box:nth-child(4){
+    grid-area: 6/2/9/6;
+}
+.landing-page-content .box:nth-child(5){
+    grid-area: 6/7/9/11;
+}
+.landing-page-content .box:nth-child(6){
+    grid-area: 6/12/9/16;
+}
+
 .landing-page-content .box:hover{
     cursor: pointer;
     background-color: #0000000e;
 }
-
 .landing-page-content .box-title {
     margin-top: 1%;
     text-align: start;
