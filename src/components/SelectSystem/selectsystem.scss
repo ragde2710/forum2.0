@@ -1,12 +1,11 @@
 .select__system--main {
     display: grid;
     margin: 10% 10% auto 10%;
-    height: 200px;
 }
 
 .select__system--form{
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 10% 6fr 1fr;
 }
 .select__system--form-title{
     grid-row: 1;

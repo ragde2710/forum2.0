@@ -1,10 +1,8 @@
 import React from 'react';
 import './forum.scss';
-import { ExpandableTile,
-         TileAboveTheFoldContent,
-         TileBelowTheFoldContent,
-         TextInput, props } from 'carbon-components-react';
+import { PaginationNav } from 'carbon-components-react';
 import SideNavBar from '../../components/SideNav/sidenav';
+import ModalTile from '../../components/ModalTile/modaltile';
 
 function Forum() {
   return (
@@ -12,32 +10,28 @@ function Forum() {
         <SideNavBar/>
         <div className='forum-app__main'>
           <div className='forum-app__box'>
-          <ExpandableTile>
-            <TileAboveTheFoldContent>
-              <div style={{ height: '120px' }}>Above the fold content here</div>
-            </TileAboveTheFoldContent>
-            <TileBelowTheFoldContent>
-              <div style={{ height: '400px' }}>
-                Below the fold content here
-                <TextInput id="test2" invalidText="A valid value is required" />
-              </div>
-            </TileBelowTheFoldContent>
-          </ExpandableTile>
+            <ModalTile/>
           </div>
           <div className='forum-app__box'>
-            2
+            <ModalTile/>
           </div>
           <div className='forum-app__box'>
-            3
+            <ModalTile/>
           </div>
           <div className='forum-app__box'>
-            4
+            <ModalTile/>
           </div>
           <div className='forum-app__box'>
-            5
+            <ModalTile/>
+          <div className='forum-app__box'>
+            <ModalTile/>
+          </div>
+          <div className='forum-app__box'>
+            <PaginationNav/>
           </div>
         </div>
     </div>
+  </div>
   );
 }
 export default Forum;
