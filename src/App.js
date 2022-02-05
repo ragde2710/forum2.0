@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, Component }from 'react';
 import './App.scss';
 import BoxCheckList from './components/boxes/box-checkList/box-checkList';
 import BoxPTS from './components/boxes/box-pts/box-pts';
@@ -7,7 +7,9 @@ import BoxCertificationTool from './components/boxes/box-certificationTool/box-C
 import BoxSmartWeb from './components/boxes/box-smartWeb/box-smartWeb';
 import BoxGolden from './components/boxes/box-golden/BoxGolden';
 
-function App() {
+
+
+function App () {
     return (
         <div className='app'>
             <div className='landing-page-content'>
@@ -21,5 +23,4 @@ function App() {
         </div>
     );
 }
-
 export default App;

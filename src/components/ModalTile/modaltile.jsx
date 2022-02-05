@@ -2,31 +2,33 @@ import React from "react";
 import './modaltile.scss';
 import { ModalWrapper } from 'carbon-components-react'; 
 
-function ModalTile() {
+const ModalTile = ({ product }) => {
     return (
         <div className='modal-tile__main'>
-            
             <div className="modal-tile__passive">
                 <div class="modal-tile__passive--content">
                     <div className="modal-tile__passive--title">
-                        <h3>Titulo de la falla</h3>
+                        <h3>{product.title}</h3>
                     </div>
                     <div className="modal-tile__passive--description">
-                        <p>Breve descripcion de la Falla</p>
+                        <p>{product.description}</p>
                     </div>
                     <div className="modal-tile__passive--btn">
                     <ModalWrapper
-                        buttonTriggerText="Ver Más"
-                        modalHeading="Titulo de la Falla"
+                        buttonTriggerText="Ver Más..."
+                        modalHeading={product.title}
                         >
-                        <p> 
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit. Suspendisse cursus fermentum 
-                        risus, sit amet fringilla nunc pellentesque quis. 
-                        Duis quis odio ultrices, cursus lacus ac, posuere felis. 
-                        Donec dignissim libero in augue mattis, a molestie metus 
-                        vestibulum. 
-                        </p>
+                        <div className="modal-tile__active--header">
+                            <div className="modal-tile__active--header-box">
+                                <p>{product.title}</p>
+                            </div>
+                            <div className="modal-tile__active--header-box">
+                                <p>{product.price}</p> 
+                            </div>
+                        </div>
+                        <div className="modal-tile__active--content">
+                        <img src = {product.images[1]}/>
+                        </div>
                     </ModalWrapper>
                     </div>
                 </div>
@@ -34,8 +36,4 @@ function ModalTile() {
             </div>
     );
 }
-
-
-
-
 export default ModalTile;

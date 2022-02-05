@@ -50,3 +50,22 @@
 .bx--btn-set {
     display: none;
 }
+
+.modal-tile__active--header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 120%;
+    place-items: center;
+    margin-bottom: 3%;
+}
+.modal-tile__active--header-box {
+    padding: 3%;
+    border: 1px solid white;
+}
+.modal-tile__active--content{
+    width: 120%;    
+    overflow-y: scroll;
+}
+.modal-tile__active--content p{
+    margin-bottom: 3%;
+}
