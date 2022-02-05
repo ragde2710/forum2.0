@@ -32,11 +32,11 @@ function SideNavBar() {
             </SideNavMenu>
   
             <SideNavLink>
-                Avisos
+              <Link to="/alerts">Avisos</Link>
             </SideNavLink>
   
             <SideNavLink>
-                PCM'S
+              <Link to="/pcms">PCMs</Link>
             </SideNavLink>
   
           </SideNavItems>

@@ -1,3 +1,16 @@
+.bx--side-nav {
+    background-color: #161616;
+}
+.bx--side-nav__submenu,
+a.bx--side-nav__link > .bx--side-nav__link-text,
+.bx--side-nav a{
+    color: white;
+}
+a.bx--side-nav__link-text,
+.bx--side-nav__submenu:hover{
+    background-color: #e5e5e5;
+    color: #161616;
+}
 .bx--side-nav__navigation {
     margin-top: 65px;
-}
+}   

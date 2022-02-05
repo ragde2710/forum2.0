@@ -2,23 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
-import { Header, HeaderName } from 'carbon-components-react';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Forum from './pages/forum/forum';
 import SrcLibrary from './pages/forum/src-library';
 import EngInst from './pages/forum/enginst';
-import WorkArounds from './pages/forum/workarounds'
-import Checklist from './pages/checklist/index'
+import WorkArounds from './pages/forum/workarounds';
+import Checklist from './pages/checklist/index';
+import { Header, HeaderName } from "carbon-components-react";
+import img from './ibm.png';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter> 
     <Header aria-label="IBM Platform Name">
-        <HeaderName href="/" prefix="IBM">
-          [Power System Apps]
+            <HeaderName href="#" prefix="IBM">
+            [Power Forum]
         </HeaderName>
-      </Header>
+        </Header>
         <Routes>
           <Route path="/" element={<App />}/>
           <Route path="/srcs" element={<SrcLibrary/>}/>
