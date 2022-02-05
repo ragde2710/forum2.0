@@ -8,30 +8,7 @@ function Forum() {
   return (
     <div className='forum-app'>
         <SideNavBar/>
-        <div className='forum-app__main'>
-          <div className='forum-app__box'>
-            <ModalTile/>
-          </div>
-          <div className='forum-app__box'>
-            <ModalTile/>
-          </div>
-          <div className='forum-app__box'>
-            <ModalTile/>
-          </div>
-          <div className='forum-app__box'>
-            <ModalTile/>
-          </div>
-          <div className='forum-app__box'>
-            <ModalTile/>
-          <div className='forum-app__box'>
-            <ModalTile/>
-          </div>
-          <div className='forum-app__box'>
-            <PaginationNav/>
-          </div>
-        </div>
     </div>
-  </div>
   );
 }
 export default Forum;
